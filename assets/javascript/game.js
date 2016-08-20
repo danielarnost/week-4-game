@@ -1,42 +1,40 @@
 
- ;$(document).ready(function(){
-    alert( "welcome" );
- 
-});
-//alert ("hello");// test to see if linked properly
 //GLOBAL VARIABLES
 //=====================================================
 //Arrays and variables for holding data
-$( ".crystal" ).click(function() {
-   .b
-});
+
 
 //var computerAnswer = []
 
+$(document).ready(function(){
 
-var computerAnswer = []
-var winCounter = 0
-var lossCounter = 0 
+var computerAnswer = Math.floor((Math.random() * 120) + 19);// find way to do a range 19  to 120
+
+
 var userGameCounter = []
 var crystalValue = []
 
 
 // sub category game counters (Global)
 //__________________________________________________________
+var winCounter = 0
+var lossCounter = 0 
+var totalScore = 0 
+
+//Functions (Reusable blocks of code )_____________________
+$(".computerAnswer").html(computerAnswer)
+$(".opal").click(function(){
+Math.floor((Math.random() * 120) + 19))
 
 
-//Functions (Reusable blocks of code )
-$(document).ready(function(){
 
-//===============================================
-//*generate computer guess
-var computerAnswer = (Math.floor(Math.random()*100))
-$Math.random(computerAnswer)
 
 
 //reset functions - every time it runs start game these need to be reset
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+function reset(){ 
+randomNumber
+}
 
 
 //populate DOM====================================================
@@ -82,3 +80,7 @@ $( ".crystal" ).click(function() {
 
 //Initiaiates code for first time
 $startGame();
+
+
+
+});
